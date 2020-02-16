@@ -13,14 +13,17 @@
 * Go to "Favorilerim / Listelerim" menu from account
 * Select and delete product
 * Click Logout
+
 ### which technologies were used
 * java and intellij were used. 
 * Cucumber tool was used.
 * Maven, Junit and TestNG were used.
 * Log4j and Assertion were used in project
+
 ### Other Features
 * There are inline comments to understand easily the codes
 * The project was made according to development environment rules
 * There is clean code logic in project
 * It is possible to test each method that method does exactly
 
+> Projeyi Run etmek için projede belirtilen yere mail şifre gerekmektedir.
