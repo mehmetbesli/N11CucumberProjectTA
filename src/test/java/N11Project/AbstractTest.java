@@ -27,8 +27,8 @@ public class AbstractTest {
             wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(by));
             wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(by));
         } catch (Exception e) {
-            log.warning("webelement'e tıklamaya çalışırken hata aldı : " + e);
-            log.info("webelement'e tıklamaya çalışırken hata aldı : " + e);
+            log.warning("Obje görünene kadar beklerken hata aldı : " + e);
+            log.info("Obje görünene kadar beklerken  hata aldı : " + e);
 
             throw new RuntimeException(e);
         }
@@ -46,8 +46,8 @@ public class AbstractTest {
                 ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(false);arguments[0].focus();", webElement);
             }
         } catch (Exception e) {
-            log.warning("webelement'e tıklamaya çalışırken hata aldı : " + e);
-            log.info("webelement'e tıklamaya çalışırken hata aldı : " + e);
+            log.warning("Elementi bulmaya çalışırken hata aldı : " + e);
+            log.info("Elementi bulmaya çalışırken hata aldı : " + e);
             throw new RuntimeException(e);
         }
 
@@ -61,8 +61,8 @@ public class AbstractTest {
         try {
             webElements=driver.findElements(by);
         }catch (Exception e){
-            log.warning("webelement'e tıklamaya çalışırken hata aldı : " + e);
-            log.info("Error while listing webelements by css selector : " + e);
+            log.warning("Elementi bulmaya çalışırken hata aldı : " + e);
+            log.info("Error while finding element by css selector : " + e);
         }
 
         return webElements;
@@ -139,17 +139,6 @@ public class AbstractTest {
         try {
             Actions action = new Actions(driver);
             WebElement we = findElement(by);
-            action.moveToElement(we).build().perform();
-        } catch (Exception e) {
-            log.warning("Move yapmaya çalışırken hata aldı : " + e);
-            log.info("Hesabım'a tıklamaya  çalışırken hata aldı : " + e);
-            throw new RuntimeException(e);
-        }
-    }
-
-    protected void moveToElement(WebElement we) {
-        try {
-            Actions action = new Actions(driver);
             action.moveToElement(we).build().perform();
         } catch (Exception e) {
             log.warning("Move yapmaya çalışırken hata aldı : " + e);
