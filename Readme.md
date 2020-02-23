@@ -2,7 +2,7 @@
 
 ### What is the content of the project
 
-#### Senario - 1
+#### Scenario - 1
 * Go to the url “https://www.n11.com/”
 * Go to login Page
 * Typing username and password
@@ -16,7 +16,7 @@
 * Select and delete product
 * Click Logout
 
-#### Senario - 2
+#### Scenario - 2
 * Navigate to IETT website
 * Search Line Stop name and select from popup
 * Get Information about line
