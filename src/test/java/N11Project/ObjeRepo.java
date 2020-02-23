@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 /**
  * created by MehmetBesli on 02.2020
  */
-public class N11ObjeRepo {
+public class ObjeRepo {
     public static final By girisYapText = By.cssSelector("a[class='btnSignIn']");
     public static final By email = By.id("email");
     public static final By password = By.id("password");
@@ -32,5 +32,28 @@ public class N11ObjeRepo {
     public static final By productInFavourite= By.xpath("//div[@class=\"proDetail\"]/a[2]");
     public static final By deletedProductMessage= By.cssSelector("span[class='message']");
     public static final By productNotExist= By.cssSelector("div[class='emptyWatchList hiddentext']");
+    public static final By lineStopText= By.cssSelector("[class='Shortcuts-item isActive'] a");
+    public static final By lineStop= By.id("select2-searchShortcutsLine-container");
+    public static final By lineStopNumber= By.cssSelector("input[class='select2-search__field']");
+    public static final By from= By.cssSelector("div[class='SearchBriefTable SearchBriefTable--start'] h3");
+    public static final By to= By.cssSelector("div[class='SearchBriefTable SearchBriefTable--finish'] h3");
+    public static final By lineNumber= By.cssSelector("h1[class=\"SearchBriefHeader_title\"]");
+    public static final By shortestTime= By.cssSelector("[class='SearchBriefHeader_subtitle']");
+    public static final By allInfo= By.xpath("//footer[@class=\"SearchBriefFooter\"]//a");
+    public static final By busNUmberFromTo= By.cssSelector("[id='select2-DetailSelect-container'] span");
+    public static final By stopThrough= By.cssSelector("a[href='#LineStation']");
+    public static final By stopName= By.xpath("//div[@data-direction=\"Going\"]//ol//li[3]");
+    public static final By stopDetails= By.xpath("//div[@data-direction=\"Going\"]//ol//li[3]//a[2]");
+    public static final By moveStopGetText= By.xpath("//div[@data-direction=\"Going\"]//ol//li[3]//a[2]/span");
+    public static final By instandStopInfo= By.cssSelector("table[class='StationFilterBus'] tbody tr");
+    public static final By instandStopInfoText= By.xpath("//nav[@class=\"DetailTabs DetailTabs--4 clearfix\"]//a[1]//span");
+    public static final By busesPassingThroughStop= By.cssSelector("a[href='#StationBusList']");
+    public static final By busesPassingThroughStopNumber= By.cssSelector("ol[class='StationBuses'] li");
+    public static final By aboutStop= By.cssSelector("a[href='#StationInfo']");
+    public static final By stopInformationText= By.cssSelector("h3[class='DetailInfoWidget_title']");
+    public static final By busDetails= By.cssSelector("div[class='stationDetails'] div");
+    public static final By IETTicon= By.cssSelector("div[class=\"SiteHeader-top\"] a[href='https://iett.istanbul/tr']");
+    public static final By controlMenu= By.cssSelector("[class='SiteNavigation'] a");
+    public static final By hovCanIGo= By.xpath("//nav[@class=\"SiteNavigation\"]//a[2]");
 
 }

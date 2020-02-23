@@ -17,7 +17,7 @@ import java.util.logging.Logger;
  */
 public class AbstractTest {
 
-    Logger log = Logger.getLogger((N11Project.class).toString());
+    Logger log = Logger.getLogger((TAProject.class).toString());
     WebDriver driver ;
     WebDriverWait wait ;
 
@@ -89,7 +89,7 @@ public class AbstractTest {
         }
     }
 
-    public void clickJS(By by) throws InterruptedException {
+    protected void clickJS(By by) throws InterruptedException {
 
         WebElement element = findElement(by);
         JavascriptExecutor executor = (JavascriptExecutor) driver;
@@ -141,8 +141,19 @@ public class AbstractTest {
             WebElement we = findElement(by);
             action.moveToElement(we).build().perform();
         } catch (Exception e) {
-            log.warning("Hesabım'a tıklamaya çalışırken hata aldı : " + e);
+            log.warning("Move yapmaya çalışırken hata aldı : " + e);
             log.info("Hesabım'a tıklamaya  çalışırken hata aldı : " + e);
+            throw new RuntimeException(e);
+        }
+    }
+
+    protected void moveToElement(WebElement we) {
+        try {
+            Actions action = new Actions(driver);
+            action.moveToElement(we).build().perform();
+        } catch (Exception e) {
+            log.warning("Move yapmaya çalışırken hata aldı : " + e);
+            log.info("Move yapmaya çalışırken hata aldı : " + e);
             throw new RuntimeException(e);
         }
     }
@@ -200,5 +211,7 @@ public class AbstractTest {
         }
         return title;
     }
+
+
 
 }

@@ -1,6 +1,8 @@
-## N11 Cucumber is a testing automation project.
+## N11 and IETT are testing automation project using Cucumber
 
 ### What is the content of the project
+
+#### Senario - 1
 * Go to the url “https://www.n11.com/”
 * Go to login Page
 * Typing username and password
@@ -14,16 +16,27 @@
 * Select and delete product
 * Click Logout
 
+#### Senario - 2
+* Navigate to IETT website
+* Search Line Stop name and select from popup
+* Get Information about line
+* Click All Information
+* Select Stops through
+* Click Third Stop
+* Get instand stop information
+* Select Buses passing through the station
+* Go to Line About and get info about it
+* Click IETT Icon
+* Click Nasıl Giderim Menu
+
 ### which technologies were used
-* java and intellij were used. 
+* java and intellij 
 * Cucumber tool was used.
 * Maven, Junit and TestNG were used.
 * Log4j and Assertion were used in project
 
 ### Other Features
-* There are inline comments to understand easily the codes
 * The project was made according to development environment rules
 * There is clean code logic in project
-* It is possible to test each method that method does exactly
 
-> Projeyi Run etmek için projede belirtilen yere mail şifre gerekmektedir.
+> You will need an email to run first senario.
