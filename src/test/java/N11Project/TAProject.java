@@ -17,8 +17,8 @@ import java.util.concurrent.TimeUnit;
  */
 public class TAProject extends AbstractTest {
 
-    private String email = "beslim063@gmail.com";
-    private String password = "bslmhmtn1163";
+    private String email = "";
+    private String password = "";
     private String productName = "Xiaomi";
     private String fifthProductPrice;
     private String fifthProductName;
